@@ -14,6 +14,10 @@ int main() {
 
     // Allocate memory on the host (CPU)
     int h_array[arraySize] = {0};
+    printf(" HOST ARRAY \n");
+    for (int i = 0; i < arraySize; ++i){
+      printf("%d ", h_array[i]);
+    }
 
     // Allocate memory on the device (GPU)
     int* d_array;
